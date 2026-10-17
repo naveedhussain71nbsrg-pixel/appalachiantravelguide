@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#24372b">
+  <meta name="description" content="A plain-spoken Appalachian travel safety guide with 44 practical ways to travel safely, stay prepared, and handle the unexpected.">
+  <title>Appalachian Safe Travel &amp; Survival Guide | Amos Boone</title>
+  <style>
+    :root {
+      --forest: #24372b;
+      --forest-deep: #17271e;
+      --moss: #66734d;
+      --cream: #f5f0e5;
+      --paper: #fffaf0;
+      --ink: #252820;
+      --muted: #66685c;
+      --rust: #a45e3b;
+      --line: #ded5c3;
+      --shadow: 0 18px 55px rgba(24, 31, 23, .17);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--cream);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.65;
+    }
+    a { color: inherit; }
+    .topbar {
+      background: var(--forest-deep);
+      color: #f7f0df;
+      text-align: center;
+      padding: 10px 16px;
+      font: 600 12px/1.5 Arial, sans-serif;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    header {
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(110deg, rgba(20, 36, 26, .96), rgba(36, 55, 43, .91)),
+        radial-gradient(ellipse at 75% 30%, #65724f, transparent 45%);
+      color: #fff8e9;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 7px;
+      background: repeating-linear-gradient(90deg, #9a6844 0 22px, #6d4932 22px 44px);
+      opacity: .9;
+    }
+    .nav {
+      width: min(1160px, calc(100% - 40px));
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 0;
+      gap: 20px;
+      border-bottom: 1px solid rgba(255,255,255,.16);
+      font-family: Arial, sans-serif;
+    }
+    .brand {
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+    .nav a { text-decoration: none; font-size: 13px; opacity: .9; }
+    .hero {
+      width: min(1160px, calc(100% - 40px));
+      margin: auto;
+      padding: 66px 0 88px;
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      align-items: center;
+      gap: clamp(32px, 6vw, 82px);
+    }
+    .eyebrow {
+      display: inline-block;
+      color: #d9c39b;
+      font: 700 11px/1.5 Arial, sans-serif;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: clamp(38px, 5.1vw, 65px);
+      line-height: 1.04;
+      letter-spacing: -.035em;
+      font-weight: 500;
+      margin: 0 0 22px;
+      max-width: 700px;
+    }
+    .hero p {
+      color: #e2e3d9;
+      font-size: clamp(17px, 1.8vw, 20px);
+      max-width: 600px;
+      margin: 0 0 28px;
+    }
+    .hero .subtitle {
+      color: #d7c9a9;
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+    .buyrow { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; }
+    .price { font-size: 31px; font-weight: 700; color: #fff7e8; }
+    .price small { display: block; font: 11px Arial, sans-serif; color: #c7cebf; letter-spacing: .1em; text-transform: uppercase; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--rust);
+      color: #fffaf1;
+      text-decoration: none;
+      padding: 16px 25px;
+      border-radius: 3px;
+      font: 700 12px/1.2 Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .13em;
+      box-shadow: 0 7px 18px rgba(0,0,0,.18);
+      transition: transform .2s ease, background .2s ease;
+    }
+    .button:hover { background: #b66b45; transform: translateY(-2px); }
+    .cover-wrap { position: relative; max-width: 500px; width: 100%; justify-self: center; }
+    .cover-wrap::before {
+      content: "";
+      position: absolute;
+      inset: 18px -16px -18px 16px;
+      border: 1px solid rgba(226, 202, 157, .45);
+      transform: rotate(2deg);
+    }
+    .cover {
+      position: relative;
+      display: block;
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      object-fit: contain;
+      object-position: center;
+      box-shadow: var(--shadow);
+      border: 7px solid #e8ddc5;
+      background: #ddd;
+    }
+    .trustline {
+      background: #e9e1d1;
+      border-bottom: 1px solid #d7cbb5;
+      color: #424839;
+      padding: 15px 20px;
+      text-align: center;
+      font: 700 11px/1.6 Arial, sans-serif;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    main { overflow: hidden; }
+    .section { width: min(1060px, calc(100% - 40px)); margin: auto; padding: 82px 0; }
+    .section-label {
+      color: var(--rust);
+      font: 700 11px/1.5 Arial, sans-serif;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      margin-bottom: 13px;
+    }
+    h2 {
+      font-size: clamp(30px, 4vw, 43px);
+      line-height: 1.15;
+      font-weight: 500;
+      letter-spacing: -.025em;
+      margin: 0 0 20px;
+    }
+    .intro { max-width: 730px; font-size: 18px; color: #55594d; }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 36px;
+    }
+    .feature {
+      padding: 25px 24px 27px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-top: 3px solid var(--moss);
+    }
+    .feature .num {
+      color: var(--rust);
+      font: 700 12px Arial, sans-serif;
+      letter-spacing: .12em;
+      margin-bottom: 16px;
+    }
+    .feature h3 { font-size: 21px; line-height: 1.2; font-weight: 500; margin: 0 0 11px; }
+    .feature p { margin: 0; color: var(--muted); font-size: 15px; }
+    .quote-band {
+      background: var(--forest);
+      color: #f8f1e2;
+      position: relative;
+    }
+    .quote-inner {
+      width: min(950px, calc(100% - 40px));
+      margin: auto;
+      padding: 62px 0;
+      text-align: center;
+    }
+    .quote-mark { font-size: 48px; color: #c3a77b; line-height: .8; }
+    .quote-inner p { font-size: clamp(22px, 3vw, 31px); line-height: 1.4; margin: 14px auto 0; max-width: 850px; }
+    .author {
+      display: grid;
+      grid-template-columns: .78fr 1.22fr;
+      align-items: center;
+      gap: 48px;
+    }
+    .author-photo {
+      width: 100%;
+      max-height: 420px;
+      object-fit: cover;
+      object-position: center 25%;
+      border: 7px solid #e8ddc5;
+      box-shadow: var(--shadow);
+    }
+    .author-copy p { color: #5d6055; font-size: 17px; }
+    .signature {
+      color: var(--forest);
+      font-style: italic;
+      font-size: 25px;
+      margin-top: 22px;
+    }
+    .final-cta {
+      background: #e8dfcd;
+      border-top: 1px solid #d6c8b0;
+      border-bottom: 1px solid #d6c8b0;
+    }
+    .cta-inner {
+      width: min(900px, calc(100% - 40px));
+      margin: auto;
+      padding: 65px 0 72px;
+      text-align: center;
+    }
+    .cta-inner p { max-width: 640px; margin: 0 auto 27px; color: #5a5d51; font-size: 17px; }
+    .cta-inner .button { margin-top: 3px; }
+    footer {
+      background: var(--forest-deep);
+      color: #d8d9cd;
+      text-align: center;
+      padding: 25px 20px;
+      font: 12px/1.8 Arial, sans-serif;
+    }
+    footer .foot-brand { color: #f5e9d1; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    @media (max-width: 760px) {
+      .nav { width: min(100% - 32px, 1160px); padding: 18px 0; }
+      .nav a { font-size: 12px; }
+      .hero { grid-template-columns: 1fr; padding: 48px 0 66px; gap: 44px; }
+      .hero-copy { text-align: center; }
+      .hero p, .hero .subtitle { margin-left: auto; margin-right: auto; }
+      .buyrow { justify-content: center; }
+      .cover-wrap { max-width: 310px; }
+      .section { padding: 60px 0; }
+      .features { grid-template-columns: 1fr; }
+      .author { grid-template-columns: 1fr; gap: 30px; }
+      .author-photo { max-width: 420px; justify-self: center; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">Practical wisdom for the road ahead</div>
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <div class="brand">Amos Boone · Appalachian Guides</div>
+      <a href="#about">About the Guide</a>
+    </nav>
+    <div class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">A plain-spoken field guide</span>
+        <h1>Appalachian Safe Travel &amp; Survival Guide</h1>
+        <p class="subtitle">44 Practical Ways to Travel Safely, Stay Prepared &amp; Handle the Unexpected</p>
+        <p>Whether you're heading down a back road, visiting a national park, or planning a trip through mountain country, a little preparation can make a big difference.</p>
+        <div class="buyrow">
+          <div class="price">$29 <small>Instant digital guide</small></div>
+          <a class="button" href="https://amosboone.gumroad.com/l/appalachiansafetravelsurvivalguide" target="_blank" rel="noopener noreferrer">Get the Guide</a>
+        </div>
+      </div>
+      <div class="cover-wrap">
+        <img class="cover" src="book-cover.png" alt="Appalachian Safe Travel & Survival Guide book cover">
+      </div>
+    </div>
+  </header>
+
+  <div class="trustline">44 practical methods · Travel safety · Preparedness · Mountain country</div>
+
+  <main>
+    <section class="section" id="about">
+      <div class="section-label">What you'll find inside</div>
+      <h2>Be better prepared before the unexpected happens.</h2>
+      <p class="intro">This guide brings together practical travel-safety ideas in a straightforward format. It is made for readers who want to think ahead, prepare sensibly, and make wiser choices on the road and outdoors.</p>
+      <div class="features">
+        <article class="feature">
+          <div class="num">01 / PLAN AHEAD</div>
+          <h3>Travel with a clearer plan</h3>
+          <p>Think through your route, your needs, and the small preparations that can help a trip go more smoothly.</p>
+        </article>
+        <article class="feature">
+          <div class="num">02 / STAY PREPARED</div>
+          <h3>Pack with purpose</h3>
+          <p>Build a more thoughtful approach to essentials, readiness, and handling common travel surprises.</p>
+        </article>
+        <article class="feature">
+          <div class="num">03 / USE GOOD JUDGMENT</div>
+          <h3>Respect the outdoors</h3>
+          <p>Keep safety in mind when visiting parks, back roads, and mountain-country destinations.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote-band">
+      <div class="quote-inner">
+        <div class="quote-mark">“</div>
+        <p>A little forethought on the front end can spare a heap of trouble down the road.</p>
+      </div>
+    </section>
+
+    <section class="section author">
+      <img class="author-photo" src="amos-boone.png" alt="Amos Boone, pictured in a rustic workshop">
+      <div class="author-copy">
+        <div class="section-label">Meet the author</div>
+        <h2>Amos Boone</h2>
+        <p>Amos Boone believes in plain-spoken advice, practical preparation, and paying attention before setting out. His guide is designed to help readers approach travel and outdoor visits with a steadier plan and a more prepared mindset.</p>
+        <p>Use this guide as a starting point for your own planning, and always follow current local guidance, posted rules, and professional advice where needed.</p>
+        <div class="signature">Amos Boone</div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="cta-inner">
+        <div class="section-label">Start preparing today</div>
+        <h2>Take the guide along for the road ahead.</h2>
+        <p>Get the <em>Appalachian Safe Travel &amp; Survival Guide</em> — 44 practical ways to travel safely, stay prepared, and handle the unexpected.</p>
+        <a class="button" href="https://amosboone.gumroad.com/l/appalachiansafetravelsurvivalguide" target="_blank" rel="noopener noreferrer">Get Instant Access · $29</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="foot-brand">Amos Boone · Appalachian Guides</div>
+    <div>© <span id="year">2026</span> Amos Boone. All rights reserved.</div>
+    <div>Educational information only. Use sound judgment and follow current official safety guidance.</div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
