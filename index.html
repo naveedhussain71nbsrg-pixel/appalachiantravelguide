@@ -21,11 +21,7 @@ h1{font-size:clamp(38px,5.1vw,65px);line-height:1.04;letter-spacing:-.035em;font
 .trustline{background:#e9e1d1;border-bottom:1px solid #d7cbb5;color:#424839;padding:15px 20px;text-align:center;font:700 11px/1.6 Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}
 main{overflow:hidden}.section{width:min(1100px,calc(100% - 40px));margin:auto;padding:78px 0}.section-label{color:var(--rust);font:700 11px/1.5 Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;margin-bottom:13px}
 h2{font-size:clamp(30px,4vw,43px);line-height:1.15;font-weight:500;letter-spacing:-.025em;margin:0 0 16px}.intro{max-width:760px;font-size:18px;color:#55594d;margin:0}
-.products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;margin-top:38px}.product{background:var(--paper);border:1px solid var(--line);box-shadow:0 10px 30px rgba(24,31,23,.08);display:flex;flex-direction:column;overflow:hidden}
-.product-image{background:#e5dcc9;padding:20px;display:flex;align-items:center;justify-content:center;min-height:340px}.product-image img{display:block;max-width:100%;width:100%;height:310px;object-fit:contain;filter:drop-shadow(0 12px 14px rgba(0,0,0,.16))}
-.product-body{padding:26px 28px 30px;display:flex;flex-direction:column;flex:1}.product-kicker{color:var(--rust);font:700 11px Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;margin-bottom:9px}
-.product h3{font-size:26px;line-height:1.16;font-weight:500;margin:0 0 10px}.product p{color:#5d6055;margin:0 0 20px;font-size:15px}
-.product-bottom{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:auto;padding-top:8px}.product-price{font-size:29px;font-weight:700;color:var(--forest)}.product .button{white-space:nowrap}
+.guide-list{display:flex;flex-direction:column;gap:64px;margin-top:42px}.guide-row{display:grid;grid-template-columns:.88fr 1.12fr;gap:clamp(28px,5vw,64px);align-items:center;padding:12px 0 54px;border-bottom:1px solid var(--line)}.guide-row.reverse{grid-template-columns:.88fr 1.12fr}.guide-row.reverse .guide-copy{order:1}.guide-row.reverse .guide-banner{order:2}.guide-copy h3{font-size:clamp(30px,3.2vw,42px);line-height:1.13;font-weight:500;letter-spacing:-.025em;margin:0 0 15px;color:var(--forest)}.guide-copy>p{font-size:17px;color:#55594d;margin:0 0 20px}.guide-banner{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:8px;box-shadow:var(--shadow);display:block}.guide-highlights{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 28px}.guide-highlights span{border:1px solid var(--line);background:#fffaf0;padding:8px 11px;border-radius:3px;font:600 11px Arial,sans-serif;color:#4e5548}.guide-buy{display:flex;align-items:center;gap:22px;flex-wrap:wrap}.guide-buy small{display:block;color:var(--muted);font:12px Arial,sans-serif;margin-top:2px}.product-kicker{color:var(--rust);font:700 11px Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;margin-bottom:13px}.product-price{font-size:32px;font-weight:700;color:var(--forest)}
 .bundle-section{background:var(--forest);color:#f8f1e2}.bundle-inner{width:min(1100px,calc(100% - 40px));margin:auto;padding:78px 0}
 .bundle-layout{display:grid;grid-template-columns:1.04fr .96fr;gap:42px;align-items:center}.bundle-image{width:100%;display:block;border:6px solid #e8ddc5;box-shadow:var(--shadow)}
 .bundle-section .section-label{color:#d9c39b}.bundle-section h2{color:#fff8e9}.bundle-copy>p{color:#e0e2d7;font-size:17px}
@@ -36,8 +32,8 @@ h2{font-size:clamp(30px,4vw,43px);line-height:1.15;font-weight:500;letter-spacin
 .author-copy p{color:#5d6055;font-size:17px}.signature{color:var(--forest);font-style:italic;font-size:25px;margin-top:22px}
 .final-cta{background:#e8dfcd;border-top:1px solid #d6c8b0;border-bottom:1px solid #d6c8b0}.cta-inner{width:min(900px,calc(100% - 40px));margin:auto;padding:62px 0 68px;text-align:center}.cta-inner p{max-width:650px;margin:0 auto 25px;color:#5a5d51;font-size:17px}
 footer{background:var(--deep);color:#d8d9cd;text-align:center;padding:25px 20px;font:12px/1.8 Arial,sans-serif}footer .foot-brand{color:#f5e9d1;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
-@media(max-width:760px){.nav{width:calc(100% - 32px);padding:18px 0}.navlinks{gap:12px}.navlinks a{font-size:11px}.hero{grid-template-columns:1fr;padding:48px 0 62px;gap:34px}.hero-copy{text-align:center}.hero p{margin-left:auto;margin-right:auto}.hero-art{max-width:440px}.section,.bundle-inner{padding:58px 0}.products{grid-template-columns:1fr}.product-image{min-height:280px}.product-image img{height:270px}.bundle-layout{grid-template-columns:1fr;gap:30px}.bundle-image{max-width:650px;justify-self:center}.author{grid-template-columns:1fr;gap:28px}.author-photo{max-width:420px;justify-self:center}}
-@media(max-width:430px){.product-bottom{align-items:flex-start;flex-direction:column}.product .button{width:100%}.bundle-points{grid-template-columns:1fr}.navlinks{gap:9px}}
+@media(max-width:760px){.nav{width:calc(100% - 32px);padding:18px 0}.navlinks{gap:12px}.navlinks a{font-size:11px}.hero{grid-template-columns:1fr;padding:48px 0 62px;gap:34px}.hero-copy{text-align:center}.hero p{margin-left:auto;margin-right:auto}.hero-art{max-width:440px}.section,.bundle-inner{padding:58px 0}.guide-list{gap:42px}.guide-row,.guide-row.reverse{grid-template-columns:1fr;gap:25px;padding-bottom:38px}.guide-row.reverse .guide-copy,.guide-row.reverse .guide-banner{order:initial}.guide-copy{text-align:left}.guide-banner{max-width:100%}.guide-buy{gap:16px}.bundle-layout{grid-template-columns:1fr;gap:30px}.bundle-image{max-width:650px;justify-self:center}.author{grid-template-columns:1fr;gap:28px}.author-photo{max-width:420px;justify-self:center}}
+@media(max-width:430px){.guide-buy{align-items:flex-start;flex-direction:column}.guide-buy .button{width:100%}.bundle-points{grid-template-columns:1fr}.navlinks{gap:9px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 </style>
 </head>
@@ -49,24 +45,26 @@ footer{background:var(--deep);color:#d8d9cd;text-align:center;padding:25px 20px;
 <div class="hero-copy"><span class="eyebrow">Practical Appalachian Guides</span><h1>Travel Prepared. Explore with Confidence.</h1>
 <p>Discover practical guides for safer travel, outdoor preparedness, and Appalachian hunting knowledge—all from Amos Boone.</p>
 <p class="subtitle">Choose an individual guide or get both together in the special 2-book bundle and save $9.</p><a class="button" href="#books">Explore the Guides</a></div>
-<img class="hero-art" src="amos-boone.png" alt="Amos Boone in a rustic cabin workshop">
+<img class="hero-art" src="amos-boone-blue-shirt.jpg" alt="Amos Boone in a rustic cabin workshop">
 </div>
 </header>
 <div class="trustline">Two Practical Guides · Outdoor Knowledge · Appalachian Travel & Hunting</div>
 <main>
 <section class="section" id="books"><div class="section-label">The Amos Boone Collection</div><h2>Explore the Guides</h2>
 <p class="intro">Two practical digital guides covering travel safety, preparedness, and hunting knowledge. Choose the guide that suits your interests, or get both in one bundle.</p>
-<div class="products">
-<article class="product"><div class="product-image"><img src="travel-survival-cover.jpg" alt="Appalachian Safe Travel & Survival Guide cover"></div><div class="product-body">
-<div class="product-kicker">Guide 01 · Travel & Preparedness</div><h3>Appalachian Safe Travel &amp; Survival Guide</h3>
+<div class="guide-list">
+<article class="guide-row" id="travel-guide"><div class="guide-copy">
+<div class="product-kicker">Guide 01 · Travel &amp; Preparedness</div><h3>Appalachian Safe Travel &amp; Survival Guide</h3>
 <p>Explore 44 practical ways to travel safely, stay prepared, and handle the unexpected—from trip planning and road safety to outdoor readiness and mountain-country visits.</p>
-<div class="product-bottom"><div class="product-price">$29</div><a class="button" href="https://amosboone.gumroad.com/l/Survival-and-Travel-Guide" target="_blank" rel="noopener noreferrer">Get the Guide</a></div>
-</div></article>
-<article class="product"><div class="product-image"><img src="hunting-guide-cover.jpg" alt="Amos Boone Hunting Guide cover"></div><div class="product-body">
-<div class="product-kicker">Guide 02 · Hunting & Outdoor Skills</div><h3>Amos Boone Hunting Guide</h3>
+<div class="guide-highlights"><span>Travel safety</span><span>Outdoor preparedness</span><span>Appalachian travel</span></div>
+<div class="guide-buy"><div><div class="product-price">$29</div><small>PDF · Instant access</small></div><a class="button" href="https://amosboone.gumroad.com/l/Survival-and-Travel-Guide" target="_blank" rel="noopener noreferrer">Get the Travel Guide →</a></div>
+</div><img class="guide-banner" src="travel-guide-banner.jpg" alt="Amos Boone Appalachian Safe Travel and Survival Guide banner"></article>
+<article class="guide-row reverse" id="hunting-guide"><div class="guide-copy">
+<div class="product-kicker">Guide 02 · Hunting &amp; Outdoor Skills</div><h3>Amos Boone Hunting Guide</h3>
 <p>A practical Appalachian hunting guide covering seasons, species, gear, safety, and best places, with information for readers interested in building their outdoor and hunting knowledge.</p>
-<div class="product-bottom"><div class="product-price">$29</div><a class="button" href="https://amosboone.gumroad.com/l/completehuntingguide" target="_blank" rel="noopener noreferrer">Get the Guide</a></div>
-</div></article>
+<div class="guide-highlights"><span>Hunting seasons &amp; species</span><span>Gear &amp; field skills</span><span>Safety &amp; best places</span></div>
+<div class="guide-buy"><div><div class="product-price">$29</div><small>PDF · Instant access</small></div><a class="button" href="https://amosboone.gumroad.com/l/completehuntingguide" target="_blank" rel="noopener noreferrer">Get the Hunting Guide →</a></div>
+</div><img class="guide-banner" src="hunting-guide-banner-hero.jpg" alt="Amos Boone Hunting Guide banner"></article>
 </div></section>
 <section class="bundle-section" id="bundle"><div class="bundle-inner"><div class="bundle-layout">
 <img class="bundle-image" src="amos-2-book-bundle.png" alt="Amos Boone holding the Appalachian travel and hunting guides in the 2-book bundle">
@@ -74,9 +72,9 @@ footer{background:var(--deep);color:#d8d9cd;text-align:center;padding:25px 20px;
 <p>Get both practical guides together: the Appalachian Safe Travel &amp; Survival Guide and the Amos Boone Hunting Guide. One convenient digital bundle for readers interested in safer travel, outdoor preparedness, and hunting knowledge.</p>
 <div class="bundle-price"><span class="old-price">$58</span><span class="new-price">$49</span><span class="saving">Save $9</span></div>
 <div class="bundle-points"><div class="bundle-point">✓ Both complete digital guides</div><div class="bundle-point">✓ Travel safety & preparedness</div><div class="bundle-point">✓ Hunting seasons, species & gear</div><div class="bundle-point">✓ One convenient collection</div></div>
-<a class="button" href="https://amosboone.gumroad.com/l/Survival-and-Hunting-Guide?"\1>Get Both Guides · $49</a>
+<a class="button" href="https://amosboone.gumroad.com/l/Survival-and-Hunting-Guide?" target="_blank" rel="noopener noreferrer">Get Both Guides · $49</a>
 </div></div></div></section>
-<section class="section author" id="author"><img class="author-photo" src="amos-boone.png" alt="Amos Boone"><div class="author-copy">
+<section class="section author" id="author"><img class="author-photo" src="amos-boone-blue-shirt.jpg" alt="Amos Boone"><div class="author-copy">
 <div class="section-label">Meet the Author</div><h2>Amos Boone</h2>
 <p>Amos Boone believes in plain-spoken advice, practical preparation, and paying attention before setting out. His guides bring together useful information for readers interested in Appalachian travel, outdoor readiness, and hunting knowledge.</p>
 <p>Use these guides as educational resources for your own planning, and always follow current local guidance, posted rules, and applicable safety and wildlife regulations.</p><div class="signature">Amos Boone</div>
