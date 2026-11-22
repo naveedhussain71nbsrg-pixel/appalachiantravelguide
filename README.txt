@@ -19,3 +19,4 @@ Hunting Guide ($29): https://amosboone.gumroad.com/l/completehuntingguide
 
 Bundle pricing shown: $58 crossed out, $49 bundle price, $9 savings.
 After committing the files in GitHub, Vercel should redeploy automatically. If not, redeploy the latest commit in Vercel.
+Updated Vercel Git connection
