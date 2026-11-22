@@ -15,7 +15,7 @@ Included:
 Product links:
 Travel & Survival Guide ($29): https://amosboone.gumroad.com/l/Survival-and-Travel-Guide
 Hunting Guide ($29): https://amosboone.gumroad.com/l/completehuntingguide
-2-Book Bundle ($49): https://amosboone.gumroad.com/l/Survival-and-Travel-Guide
+2-Book Bundle ($49): https://amosboone.gumroad.com/l/Survival-and-Hunting-Guide?
 
 Bundle pricing shown: $58 crossed out, $49 bundle price, $9 savings.
 After committing the files in GitHub, Vercel should redeploy automatically. If not, redeploy the latest commit in Vercel.
